@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 120" width="100%" height="120">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="q-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="50%" stop-color="#14070a" />
+      <stop offset="100%" stop-color="#08080a" />
+    </linearGradient>
+
+    <!-- Crimson Border Gradient -->
+    <linearGradient id="q-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f1d1d" />
+      <stop offset="50%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="q-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .quote-text { font-family: 'Georgia', serif; font-style: italic; }
+    .author-text { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="820" height="120" rx="12" fill="url(#q-bg)" />
+  <rect x="1" y="1" width="818" height="118" rx="11" fill="none" stroke="url(#q-border)" stroke-width="1.2" />
+
+  <!-- Decorative Quote Mark -->
+  <text x="36" y="72" fill="#ef4444" font-size="64" font-family="'Georgia', serif" opacity="0.25" font-weight="bold">“</text>
+
+  <!-- Quote Content -->
+  <g transform="translate(410, 52)" text-anchor="middle">
+    <text y="0" fill="#f3f4f6" font-size="16" class="quote-text">
+      “Talk is cheap. Show me the code. Build with clarity, ship with precision.”
+    </text>
+  </g>
+
+  <!-- Author / Subtext -->
+  <g transform="translate(410, 84)" text-anchor="middle">
+    <text y="0" fill="#ef4444" font-size="12" class="author-text" letter-spacing="1">
+      — Mohammad Aqib  <tspan fill="#6b7280">•</tspan>  <tspan fill="#9ca3af">Full Stack Developer &amp; Agent Builder</tspan>
+    </text>
+  </g>
+</svg>

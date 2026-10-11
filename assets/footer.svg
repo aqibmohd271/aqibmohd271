@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="100%" height="80">
+  <defs>
+    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f1d1d" stop-opacity="0" />
+      <stop offset="25%" stop-color="#ef4444" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ff4d6d" stop-opacity="1" />
+      <stop offset="75%" stop-color="#ef4444" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="f-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .footer-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; font-size: 11px; fill: #9ca3af; }
+    .heart { fill: #ef4444; }
+  </style>
+
+  <!-- Glowing Line -->
+  <line x1="60" y1="20" x2="840" y2="20" stroke="url(#footer-grad)" stroke-width="1.8" filter="url(#f-glow)" />
+
+  <!-- Center Dot -->
+  <circle cx="450" cy="20" r="3.5" fill="#ef4444" filter="url(#f-glow)" />
+
+  <!-- Footer Text -->
+  <g transform="translate(450, 52)" text-anchor="middle">
+    <text y="0" class="footer-mono">
+      Crafted with precision &amp; passion by <tspan fill="#ef4444" font-weight="600">Mohammad Aqib</tspan> • Thanks for stopping by!
+    </text>
+  </g>
+</svg>

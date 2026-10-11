@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="220">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070709" />
+      <stop offset="50%" stop-color="#0f080b" />
+      <stop offset="100%" stop-color="#050507" />
+    </linearGradient>
+
+    <!-- Crimson Glow Gradient -->
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="35%" stop-color="#f87171" />
+      <stop offset="70%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f1d1d" />
+      <stop offset="25%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="75%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="ambient-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+    </filter>
+
+    <filter id="text-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="tech-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ef4444" stroke-width="0.5" stroke-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <style>
+    .terminal-dot { transition: all 0.3s ease; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
+    .mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="900" height="220" rx="14" fill="url(#bg-grad)" />
+  <rect width="900" height="220" rx="14" fill="url(#tech-grid)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="150" cy="50" r="90" fill="#ef4444" fill-opacity="0.12" filter="url(#ambient-glow)" />
+  <circle cx="750" cy="170" r="80" fill="#dc2626" fill-opacity="0.1" filter="url(#ambient-glow)" />
+
+  <!-- Outer Border -->
+  <rect x="1.5" y="1.5" width="897" height="217" rx="13" fill="none" stroke="url(#border-grad)" stroke-width="1.8" />
+
+  <!-- Terminal Header Bar -->
+  <g transform="translate(30, 24)">
+    <circle cx="8" cy="8" r="5" fill="#ef4444" opacity="0.85" />
+    <circle cx="26" cy="8" r="5" fill="#f59e0b" opacity="0.85" />
+    <circle cx="44" cy="8" r="5" fill="#10b981" opacity="0.85" />
+    <text x="66" y="12" fill="#9ca3af" font-size="12" class="mono" opacity="0.8">aqibmohd271 // full-stack-engineer</text>
+    <rect x="710" y="0" width="130" height="18" rx="9" fill="#18181b" stroke="#27272a" stroke-width="1" />
+    <circle cx="722" cy="9" r="3.5" fill="#22c55e" />
+    <text x="732" y="13" fill="#a1a1aa" font-size="10.5" class="mono" font-weight="600">ONLINE &amp; SHIPPING</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(450, 106)" text-anchor="middle">
+    <text y="0" fill="url(#glow-grad)" font-size="44" letter-spacing="3" class="title" filter="url(#text-glow)">MOHAMMAD AQIB</text>
+  </g>
+
+  <!-- Subtitle Tagline -->
+  <g transform="translate(450, 142)" text-anchor="middle">
+    <text y="0" fill="#f3f4f6" font-size="14.5" letter-spacing="1.5" class="mono" opacity="0.9">FULL STACK DEVELOPER  •  AI AGENTS  •  WEB3 &amp; BLOCKCHAIN</text>
+  </g>
+
+  <!-- Terminal Prompt Line -->
+  <g transform="translate(450, 182)" text-anchor="middle">
+    <rect x="-240" y="-16" width="480" height="26" rx="6" fill="#111113" stroke="#27272a" stroke-width="1" />
+    <text y="2" fill="#ef4444" font-size="12" class="mono">&gt; <tspan fill="#e5e7eb">echo "Transforming ideas into resilient production code"</tspan> <tspan fill="#ef4444">_</tspan></text>
+  </g>
+</svg>
