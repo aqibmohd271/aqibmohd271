@@ -113,6 +113,11 @@
               <td align="left">Personal AI agents for macOS with configurable providers, tasks and workflows.</td>
               <td align="left">Customized edition, additional features, branding and documentation. Based on Open Dot; upstream authors remain credited.</td>
             </tr>
+            <tr>
+              <td align="left"><a href="https://github.com/aqibmohd271/whatsender-mcp"><strong>💬 Whatsender-MCP</strong></a></td>
+              <td align="left">Self-hosted WhatsApp gateway with eight MCP tools, a REST API, messaging automation and a web dashboard.</td>
+              <td align="left">Customized edition, branding, setup improvements and documentation. Based on WA-AKG; upstream authors remain credited.</td>
+            </tr>
           </tbody>
         </table>
       </markdown-accessiblity-table>
