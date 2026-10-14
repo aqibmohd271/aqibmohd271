@@ -16,7 +16,7 @@
     <img src="https://img.shields.io/badge/Featured-Codex--open--dot-2563EB?style=for-the-badge&logo=electron&logoColor=white&labelColor=0a0a0a" alt="Featured Project" />
   </a>
   <a href="https://github.com/aqibmohd271/whatsender-mcp" target="_blank">
-    <img src="https://img.shields.io/badge/Featured-Whatsapp_mcp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0a0a0a" alt="Whatsender mcp" />
+    <img src="https://img.shields.io/badge/Featured-Whatsender--mcp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0a0a0a" alt="Whatsender mcp" />
   </a>
   <a href="mailto:aqibmohd27@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-DC2626?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="Email" />
